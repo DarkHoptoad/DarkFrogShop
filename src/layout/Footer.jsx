@@ -12,7 +12,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <txt className="link__txt">Repo</txt>
+            <span className="link__txt">Repo</span>
           </a>
         </div>
       </div>
