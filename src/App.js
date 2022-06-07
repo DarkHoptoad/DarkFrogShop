@@ -1,7 +1,8 @@
 import React from "react";
-import {Header} from './layout/Header.jsx'
-import {Footer} from './layout/Footer'
-import {Shop} from './layout/Shop'
+import { Header } from "./layout/Header.jsx";
+import { Footer } from "./layout/Footer";
+import { Shop } from "./layout/Shop";
+import { ContextProvider } from "./Context";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       <div className="page">
         <Header />
         <div className="hiden"></div>
-        <Shop />
+        <ContextProvider>
+          <Shop />
+        </ContextProvider>
         <Footer />
       </div>
     </>

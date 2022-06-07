@@ -1,3 +1,5 @@
+import {useContext} from 'react'
+import {ShopContext} from '../Context'
 function GoodsItem(props) {
   const {
     mainId: id,
@@ -5,8 +7,9 @@ function GoodsItem(props) {
     displayDescription,
     displayAssets,
     price: { finalPrice, regularPrice },
-    AB = Function.prototype,
   } = props;
+
+ const {addToBasket} = useContext(ShopContext);
 
   return (
     <div className="card" id={id}>
@@ -30,7 +33,7 @@ function GoodsItem(props) {
         <button
           className="butn unselectable"
           onClick={() =>
-            AB({
+            addToBasket({
               id,
               displayName,
               finalPrice,
