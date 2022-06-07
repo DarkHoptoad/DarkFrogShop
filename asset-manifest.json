@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DarkFrogShop/static/css/main.e4404100.css",
-    "main.js": "/DarkFrogShop/static/js/main.5833cf49.js",
+    "main.js": "/DarkFrogShop/static/js/main.75d5d704.js",
     "index.html": "/DarkFrogShop/index.html",
     "main.e4404100.css.map": "/DarkFrogShop/static/css/main.e4404100.css.map",
-    "main.5833cf49.js.map": "/DarkFrogShop/static/js/main.5833cf49.js.map"
+    "main.75d5d704.js.map": "/DarkFrogShop/static/js/main.75d5d704.js.map"
   },
   "entrypoints": [
     "static/css/main.e4404100.css",
-    "static/js/main.5833cf49.js"
+    "static/js/main.75d5d704.js"
   ]
 }
