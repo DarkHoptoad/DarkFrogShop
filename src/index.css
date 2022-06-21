@@ -73,8 +73,8 @@ body {
   text-align: center;
   color: #fff;
   top: 15px;
-  right: 40px;
-  left: 60px;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
   font-size: 20px;
 }
@@ -174,7 +174,7 @@ body {
   border-radius: 3px;
 
   position: fixed;
-  bottom: 2rem;
+  top: 0;
   right: 7rem;
   z-index: 4;
 
@@ -184,13 +184,6 @@ body {
 .cart:hover {
   background-color: yellow;
   color: #000;
-}
-
-@media (min-width: 767px) {
-  .cart {
-    top: 0;
-    bottom: unset;
-  }
 }
 
 .collection {
@@ -262,7 +255,7 @@ body {
   user-select: none;
 }
 
-.toast__container{
+.toast__container {
   position: fixed;
   top: 5rem;
   right: 1rem;
@@ -272,15 +265,15 @@ body {
 }
 
 @keyframes toast {
-  0%{
+  0% {
     top: 30rem;
     opacity: 0;
   }
-  20%{
+  20% {
     top: 5rem;
     opacity: 1;
   }
-  100%{
+  100% {
     top: 5rem;
     opacity: 0;
   }
@@ -316,15 +309,87 @@ body {
   font-weight: 600;
 }
 
-.collection__item__act{
-    line-height: 1.5rem;
-    padding: 0 20px;
-    margin: 0;
-    background-color: #000;
-    color: #fff;
-    padding-bottom: 20px;
+.collection__item__act {
+  line-height: 1.5rem;
+  padding: 0 20px;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 20px;
 }
 
 .total__price {
-padding: 15px;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .slogan {
+    font-size: 15px;
+  }
+  .header__logo {
+    top: 13px;
+    font-size: 20px;
+  }
+  .header {
+    height: 52.5px;
+  }
+}
+
+@media (max-width: 493px) {
+  .cart {
+    top: unset;
+    bottom: 2rem;
+    right: 1rem;
+  }
+  .slogan {
+    top: 18px;
+    left: 53%;
+    transform: translateX(-47%);
+  }
+  .header__logo {
+    top: 13px;
+  }
+  .header {
+    height: 52.5px;
+  }
+}
+
+@media (max-width: 423px) {
+  .slogan {
+    top: 18px;
+    font-size: 14px;
+    left: 53%;
+    transform: translateX(-47%);
+  }
+  .header__logo {
+    top: 13px;
+    font-size: 19px;
+  }
+  .header {
+    height: 52.5px;
+  }
+
+  .cart {
+    top: unset;
+    bottom: 2rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 423px) {
+  .slogan {
+    font-size: 12px;
+  }
+  .header__logo {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 359px) {
+  .slogan {
+    font-size: 10px;
+  }
+  .header__logo {
+    font-size: 15px;
+  }
 }
