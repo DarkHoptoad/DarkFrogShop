@@ -1,15 +1,15 @@
-import {useContext} from 'react'
-import {ShopContext} from '../Context'
+import { useContext } from "react";
+import { ShopContext } from "../Context";
 function GoodsItem(props) {
   const {
     mainId: id,
     displayName,
     displayDescription,
     displayAssets,
-    price: { finalPrice, regularPrice },
+    price: { finalPrice },
   } = props;
 
- const {addToBasket} = useContext(ShopContext);
+  const { addToBasket } = useContext(ShopContext);
 
   return (
     <div className="card" id={id}>
@@ -25,8 +25,7 @@ function GoodsItem(props) {
       </div>
 
       <div className="price">
-        <span className="price__r">Без скидки: {regularPrice} V-$</span>
-        <span className="price__f">Сейчас: {finalPrice} V-$</span>
+        <span className="price__f">Цена: {finalPrice} V-$</span>
       </div>
 
       <div className="but">

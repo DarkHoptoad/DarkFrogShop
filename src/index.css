@@ -158,11 +158,8 @@ body {
   display: flex;
   color: #fff;
   padding: 0 15px;
-}
-
-.price__f {
-  position: absolute;
-  right: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart {
@@ -391,5 +388,11 @@ body {
   }
   .header__logo {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 310px) {
+  .slogan {
+    display: none;
   }
 }
